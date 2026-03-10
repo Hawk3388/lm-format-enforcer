@@ -3,7 +3,7 @@ from typing import Any, Callable, List, Optional, Tuple, Union
 try:
     from transformers import AutoModelForCausalLM
     from transformers.generation.logits_process import LogitsProcessor, PrefixConstrainedLogitsProcessor
-    from transformers.tokenization_utils import PreTrainedTokenizerBase
+    from transformers.tokenization_utils_base import PreTrainedTokenizerBase
 except ImportError:
     raise ImportError('transformers is not installed. Please install it with "pip install transformers[torch]"')
 
